@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --primary-blue: #140a5f;
+  --secondary-blue: #00bbf0;
+  --paragraph-white: #fefefe;
+  --gray-bg: #f8f8f9;
+  --text-color: #0c0c0c;
+  --hover-link: #00204a;
+  --hover-btn: #17a2b8;
+  --third-blue: #00204a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  padding: 0 25px;
+}
+
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 45px;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.blue-btn {
+  background-color: var(--secondary-blue);
+  color: var(--white);
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.blue-btn:hover {
+  background-color: var(--hover-btn);
+}
+
+.section-title {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.full-btn {
+  width: 100%;
+}

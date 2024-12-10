@@ -1,0 +1,139 @@
+.hero {
+  min-height: 100vh;
+  height: 893px;
+  position: relative;
+}
+
+.hero .hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/hero-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero-wrapper {
+  height: 100%;
+}
+
+.hero-wrapper .hero-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  height: 100%;
+}
+
+.hero-wrapper {
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero-wrapper.slide-back {
+  transform: translateX(-2000px);
+}
+
+.hero-item .hero-txt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  max-height: 100vh;
+}
+
+.hero-txt h3 {
+  color: var(--white);
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  max-width: 60%;
+}
+
+.hero-txt p {
+  color: var(--paragraph-white);
+  margin-bottom: 40px;
+  font-size: 14px;
+  max-width: 90%;
+}
+
+.hero-item .hero-img {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+}
+
+.hero-item .hero-img img {
+  width: 90%;
+  height: auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondary-blue);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-wrapper {
+    padding-top: 50px;
+  }
+
+  .hero-wrapper .hero-item {
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-txt h3 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,22 @@
+.single-service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 50px 0;
+}
+
+.single-service h2 {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+
+.single-service p {
+  margin-bottom: 20px;
+}
+
+.single-service img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,84 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+  background-color: var(--third-blue);
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #002759, #002b64);
+  max-width: 50%;
+  margin: 0 auto;
+  color: var(--white);
+  padding: 30px;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.form-inputs input,
+.form-inputs textarea {
+  background-color: transparent;
+  color: var(--white);
+  width: 100%;
+  min-width: 50%;
+  padding: 10px;
+  border: 1px solid #8f8d8d;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.form-inputs input.error,
+.form-inputs textarea.error {
+  border-color: red;
+}
+
+.form-inputs input.error:focus,
+.form-inputs textarea.error:focus {
+  border-color: red;
+}
+
+.form-inputs input:focus:not(.error),
+.form-inputs textarea:focus:not(.error) {
+  border-color: #fff;
+}
+
+.success-text {
+  color: green;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .form form {
+    max-width: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  .form form {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form form {
+    max-width: 100%;
+  }
+}

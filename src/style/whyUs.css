@@ -1,0 +1,51 @@
+.why-us {
+  padding-bottom: 40px;
+}
+
+.why-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.why-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.why-item .why-img {
+  width: 110px;
+  padding: 20px 25px;
+  border: 5px solid var(--third-blue);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.why-img img {
+  width: 100%;
+}
+
+.why-item span {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.why-item p {
+  width: 93%;
+  margin: 0 auto;
+}
+
+.why-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}

@@ -1,0 +1,150 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-wrapper {
+  width: 100%;
+  padding: 50px 0;
+  background-color: var(--third-blue);
+}
+
+.upper-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 70px;
+  color: var(--white);
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer-item .footer-title {
+  margin-bottom: 20px;
+}
+
+.footer-title h6 {
+  font-size: 24px;
+  color: var(--white);
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 14px;
+}
+
+.address-li a {
+  text-decoration: none;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.3s ease-in-out;
+}
+
+.address-li a:hover {
+  color: var(--secondary-blue);
+}
+
+.address-li a span {
+  margin-left: 10px;
+}
+
+.footer-medias {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.footer-medias a {
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: 10px;
+  color: var(--white);
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-medias a:hover {
+  color: var(--secondary-blue);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: var(--white);
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-links li a:hover {
+  color: var(--secondary-blue);
+}
+
+.footer-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.footer-input input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--white);
+  margin-bottom: 20px;
+  padding: 10px 5px;
+  font-size: 16px;
+  color: var(--white);
+  width: 100%;
+}
+
+.footer-input input::placeholder {
+  color: var(--white);
+}
+
+.footer-input p {
+  margin-top: 10px;
+}
+
+.copyright-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+  color: var(--third-blue);
+}
+
+@media (max-width: 1024px) {
+  .upper-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .upper-footer {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
+  }
+}

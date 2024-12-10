@@ -1,0 +1,49 @@
+.about-us {
+  background-color: var(--third-blue);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding-bottom: 100px;
+}
+
+.about-content .about-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+}
+
+.about-content .about-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--white);
+}
+
+.about-txt h6 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.about-txt p {
+  padding: 8px 0;
+}
+
+.about-btn {
+  margin-top: 40px;
+}
+
+@media (max-width: 780px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+}
